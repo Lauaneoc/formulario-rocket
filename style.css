@@ -1,0 +1,130 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+.container {
+  display: flex;
+  background-color: #191816;
+}
+
+.container h1 {
+  color: white;
+}
+
+.colunadireita, .colunaesquerda {
+  border: 1px solid black;
+}
+
+.colunaesquerda {
+  flex-basis: 50%;
+}
+
+.colunaesquerda {
+  flex: 1;
+}
+
+.colunadireita img {
+  width: auto;
+  height: 110vh;
+}
+
+.logo {
+  padding: 25px;
+}
+
+/* FORMULARIO */
+.box {
+  background-color: #24221f;
+  margin: 1.5rem 5rem 2rem 5rem;
+  padding: 4rem 8rem;
+}
+
+.box h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #d4ccb6;
+  font-size: 24px;
+}
+.box p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #afb6c2;
+  font-size: 13px;
+  padding-top: .5rem;
+  padding-bottom: 1.4rem;
+
+}
+
+.box form {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.diferencial {
+  background-color: #24221f;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+input#email.diferencial, input#senha.diferencial {
+  border: 2px solid #afb6c2;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #afb6c2;
+}
+
+.button {
+  background-color: #ffc632;
+  width: 21rem;
+  height: 2.2rem;
+  border: 1px solid #ffc632;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+input.button {
+  cursor: pointer;
+}
+
+.registre-se {
+  text-decoration: none;
+  color: #ffc632;
+  font-weight: 400;
+}
+
+.check-e-senha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.esqueci-senha {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffc632;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 10px;
+}
+
+.registre-se strong {
+  font-weight: 600;
+}

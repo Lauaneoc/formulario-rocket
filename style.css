@@ -5,18 +5,16 @@
   --form-background: #24221f;
   --primary-color: #ffc632;
 }
+body {
+  background-color: #191816;
+}
 
 .container {
   display: flex;
-  background-color: #191816;
 }
 
 .container h1 {
   color: white;
-}
-
-.colunadireita, .colunaesquerda {
-  border: 1px solid black;
 }
 
 .colunaesquerda {
@@ -28,8 +26,8 @@
 }
 
 .colunadireita img {
-  width: auto;
-  height: 110vh;
+  width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -39,6 +37,7 @@
 /* FORMULARIO */
 .box {
   background-color: #24221f;
+  border-radius: 10px;
   margin: 1.5rem 5rem 2rem 5rem;
   padding: 4rem 8rem;
 }
@@ -93,17 +92,19 @@ label {
 
 .button {
   background-color: #ffc632;
-  width: 21rem;
   height: 2.2rem;
   border: 1px solid #ffc632;
   border-radius: 8px;
   padding-left: 10px;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
 }
 
 input.button {
   cursor: pointer;
+  box-sizing: border-box;
+  
 }
 
 .registre-se {
@@ -127,4 +128,32 @@ input.button {
 
 .registre-se strong {
   font-weight: 600;
+}
+
+p.register {
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 400px) {
+  section.colunadireita{
+    visibility: hidden;
+  }
+
+  section.colunaesquerda {
+    width: auto;
+    height: 100vh;
+  }
+
+  div.box {
+    width: auto;
+    margin: 1rem;
+    padding: 2.2rem 1rem 2.2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  p.register {
+    text-align: center;
+  }
+
+
 }
